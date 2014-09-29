@@ -1,4 +1,4 @@
 dean-series
 ===========
 
-Dean's Speaker Series site
+UCF College of Business Dean Speaker Series site
