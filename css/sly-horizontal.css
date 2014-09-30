@@ -2,11 +2,12 @@
 /* Example wrapper */
 .wrap {
 	position: relative;
-	margin: 3px 0;
+	margin: 0;
 }
 
 /* Frame */
 .frame {
+    
 	/*height: 250px;
 	line-height: 250px;
 	overflow: hidden;*/
@@ -163,4 +164,26 @@
 	-webkit-transform: rotateY(-60deg) scale(0.9);
 	-ms-transform: rotateY(-60deg) scale(0.9);
 	transform: rotateY(-60deg) scale(0.9);
+}
+
+
+/* Custom */
+
+#oneframe > ul li {
+    background-color: #fff;
+    background-color: rgba(255,255,255,0.6);
+    margin: 0 30px 0 0;
+}
+
+#basic > ul li {
+    background-color: #fff;
+    background-color: rgba(255,255,255,0.9);
+}
+
+#basic .prevPage {
+    color: red;
+}
+
+#basic .nextPage {
+    color: blue;
 }
