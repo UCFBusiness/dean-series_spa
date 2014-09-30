@@ -1,0 +1,305 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+@import url(http://fonts.googleapis.com/css?family=Cinzel:400,900|Cinzel+Decorative:400,900|Comfortaa);
+/* Reset */
+/* line 7, ../scss/partials/_core.scss */
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Needed for a fluid height: */
+/* line 14, ../scss/partials/_core.scss */
+html, body {
+  height: 100%;
+}
+
+/* line 16, ../scss/partials/_core.scss */
+body {
+  background-image: url(/images/cover33-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Lato', Calibri, Arial, sans-serif;
+}
+
+/* line 24, ../scss/partials/_core.scss */
+h1, h2, h3 {
+  font-family: 'Comfortaa', Calibri, Arial, sans-serif;
+}
+
+/* line 28, ../scss/partials/_core.scss */
+.title h1 {
+  font-family: 'Cinzel', Calibri, Arial, sans-serif;
+  font-weight: 400;
+}
+
+/* line 33, ../scss/partials/_core.scss */
+.ucf {
+  background-image: url(../images/ucflogo.png);
+  background-repeat: no-repeat;
+  background-size: 310px;
+  margin-top: 13px;
+  height: 25px;
+  text-indent: -999px;
+  z-index: 100;
+}
+@media (max-width: 767px) {
+  /* line 33, ../scss/partials/_core.scss */
+  .ucf {
+    background-size: 250px;
+    margin-top: 15px;
+    width: 253px;
+    position: absolute;
+    top: 0;
+    left: 2%;
+  }
+}
+@media (min-width: 768px) {
+  /* line 33, ../scss/partials/_core.scss */
+  .ucf {
+    width: 310px;
+    position: fixed;
+    top: 0;
+    left: 1%;
+  }
+}
+
+/* Example wrapper */
+/* line 3, ../scss/partials/_sly.scss */
+.wrap {
+  position: relative;
+  margin: 0;
+}
+
+/* Frame */
+/* line 9, ../scss/partials/_sly.scss */
+.frame {
+  /*height: 250px;
+  line-height: 250px;
+  overflow: hidden;*/
+  height: 100%;
+  overflow: hidden;
+}
+
+/* line 18, ../scss/partials/_sly.scss */
+.frame > ul {
+  /*list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 100%;*/
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* line 29, ../scss/partials/_sly.scss */
+.frame > ul li {
+  /*float: left;
+  width: 227px;
+  height: 100%;
+  margin: 0 1px 0 0;
+  padding: 0;
+  background: #333;
+  color: #ddd;
+  text-align: center;
+  cursor: pointer;*/
+  float: left;
+  /*width: 700px;*/
+  height: 100%;
+  margin: 0 1px 0 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+@media (max-width: 999px) {
+  /* line 50, ../scss/partials/_sly.scss */
+  .frame > ul li {
+    width: 750px;
+  }
+}
+@media (max-width: 767px) {
+  /* line 56, ../scss/partials/_sly.scss */
+  .frame > ul li {
+    width: 320px;
+  }
+}
+@media (min-width: 1000px) {
+  /* line 62, ../scss/partials/_sly.scss */
+  .frame > ul li {
+    width: 800px;
+  }
+}
+/* line 68, ../scss/partials/_sly.scss */
+.frame > ul li.active {
+  /*color: #fff;
+  background: #a03232;*/
+}
+
+/* Scrollbar */
+/* line 74, ../scss/partials/_sly.scss */
+.scrollbar {
+  margin: 0;
+  height: 2px;
+  background: #ccc;
+  line-height: 0;
+}
+
+/* line 80, ../scss/partials/_sly.scss */
+.scrollbar .handle {
+  width: 100px;
+  height: 100%;
+  background: #292a33;
+  cursor: pointer;
+}
+
+/* line 86, ../scss/partials/_sly.scss */
+.scrollbar .handle .mousearea {
+  position: absolute;
+  top: -9px;
+  left: 0;
+  width: 100%;
+  height: 20px;
+}
+
+/* Pages */
+/* line 95, ../scss/partials/_sly.scss */
+.pages {
+  list-style: none;
+  margin: 20px 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* line 101, ../scss/partials/_sly.scss */
+.pages li {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin: 0 4px;
+  text-indent: -999px;
+  border-radius: 10px;
+  cursor: pointer;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2);
+}
+
+/* line 113, ../scss/partials/_sly.scss */
+.pages li:hover {
+  background: #aaa;
+}
+
+/* line 116, ../scss/partials/_sly.scss */
+.pages li.active {
+  background: #666;
+}
+
+/* Controls */
+/* line 121, ../scss/partials/_sly.scss */
+.controls {
+  margin: 25px 0;
+  text-align: center;
+}
+
+/* One Item Per Frame example*/
+/*.oneperframe { height: 300px; line-height: 300px; }
+.oneperframe ul li { width: 1140px; }
+.oneperframe ul li.active { background: #333; }*/
+/* Crazy example */
+/* line 129, ../scss/partials/_sly.scss */
+.crazy ul li:nth-child(2n) {
+  width: 100px;
+  margin: 0 4px 0 20px;
+}
+
+/* line 130, ../scss/partials/_sly.scss */
+.crazy ul li:nth-child(3n) {
+  width: 300px;
+  margin: 0 10px 0 5px;
+}
+
+/* line 131, ../scss/partials/_sly.scss */
+.crazy ul li:nth-child(4n) {
+  width: 400px;
+  margin: 0 30px 0 2px;
+}
+
+/* Effects */
+/* line 134, ../scss/partials/_sly.scss */
+.effects {
+  height: 200px;
+  line-height: 200px;
+  -webkit-perspective: 800px;
+  -ms-perspective: 800px;
+  perspective: 800px;
+  -webkit-perspective-origin: 50% 50%;
+  -ms-perspective-origin: 50% 50%;
+  perspective-origin: 50% 50%;
+  overflow-y: show;
+}
+
+/* line 145, ../scss/partials/_sly.scss */
+.effects ul {
+  -webkit-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+/* line 150, ../scss/partials/_sly.scss */
+.effects ul li {
+  position: relative;
+  margin: 0 -20px;
+  -webkit-transform: rotateY(60deg) scale(0.9);
+  -ms-transform: rotateY(60deg) scale(0.9);
+  transform: rotateY(60deg) scale(0.9);
+  -webkit-transition: -webkit-transform 300ms ease-out;
+  transition: transform 300ms ease-out;
+}
+
+/* line 159, ../scss/partials/_sly.scss */
+.effects ul li.active {
+  z-index: 10;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+/* line 165, ../scss/partials/_sly.scss */
+.effects ul li.active ~ li {
+  -webkit-transform: rotateY(-60deg) scale(0.9);
+  -ms-transform: rotateY(-60deg) scale(0.9);
+  transform: rotateY(-60deg) scale(0.9);
+}
+
+/* Custom */
+/* line 174, ../scss/partials/_sly.scss */
+#oneframe > ul li {
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.6);
+  margin: 0 30px 0 0;
+  min-height: 400px;
+}
+
+/* line 181, ../scss/partials/_sly.scss */
+#basic > ul li {
+  border: 1px solid #eee;
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* line 187, ../scss/partials/_sly.scss */
+#basic .prevPage {
+  position: absolute;
+  top: 33px;
+  left: 0;
+}
+
+/* line 193, ../scss/partials/_sly.scss */
+#basic .nextPage {
+  position: absolute;
+  top: 33px;
+  right: 0;
+}

@@ -1,0 +1,60 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+@import url(http://fonts.googleapis.com/css?family=Cinzel:400,900|Cinzel+Decorative:400,900|Comfortaa);
+
+/* Reset */
+*,
+*:after,
+*:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* Needed for a fluid height: */
+html, body { height: 100%; }
+
+body {
+    background-image: url(/images/cover33-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+	font-family: 'Lato', Calibri, Arial, sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Comfortaa', Calibri, Arial, sans-serif;
+}
+
+.title h1 {
+    font-family: 'Cinzel', Calibri, Arial, sans-serif;
+    font-weight: 400;
+}
+
+.ucf {
+    background-image: url(../images/ucflogo.png);
+    background-repeat: no-repeat;
+    background-size: 310px;
+    margin-top: 13px;
+    
+    height: 25px;
+    text-indent: -999px;
+    z-index: 100;
+    
+    // Mobile //
+    @media (max-width: 767px){
+        background-size: 250px;
+        margin-top: 15px;
+        width: 253px;
+        position: absolute;
+        top: 0;
+        left: 2%;
+    }
+    
+    // Tablet //
+    @media (min-width: 768px) {
+        width: 310px;
+        position: fixed;
+        top: 0;
+        left: 1%;
+    }
+}

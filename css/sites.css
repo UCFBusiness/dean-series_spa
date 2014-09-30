@@ -1,16 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
 
-@font-face {
-	font-family: 'icomoon';
-	src:url('../fonts/icomoon.eot');
-	src:url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/icomoon.svg#icomoon') format('svg'),
-		url('../fonts/icomoon.woff') format('woff'),
-		url('../fonts/icomoon.ttf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
-}
-
 /* Reset */
 *,
 *:after,
@@ -31,4 +20,15 @@ body {
 	font-family: 'Lato', Calibri, Arial, sans-serif;
     /*color: #47a3da;
 	overflow-x: hidden;*/
+}
+
+.ucf {
+    background-image: url(/images/ucflogo.png);
+    background-repeat: no-repeat;
+    background-size: 310px;
+    margin-top: 13px;
+    
+    height: 25px;
+    text-indent: -999px;
+    z-index: 100;
 }
