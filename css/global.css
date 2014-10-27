@@ -115,17 +115,18 @@ section#facultyvideo {
 /* line 114, ../scss/partials/_core.scss */
 .profile-photo {
   border: 3px solid #ddd;
+  margin: 0 auto;
   width: 80%;
 }
 
-/* line 119, ../scss/partials/_core.scss */
+/* line 120, ../scss/partials/_core.scss */
 footer {
   background: rgba(245, 245, 245, 0.9);
   background: #ccc;
   min-height: 100px;
 }
 
-/* line 125, ../scss/partials/_core.scss */
+/* line 126, ../scss/partials/_core.scss */
 .profile {
   border: 6px solid #cc9900;
   margin: 10px;
@@ -133,7 +134,7 @@ footer {
   float: right;
 }
 
-/* line 132, ../scss/partials/_core.scss */
+/* line 133, ../scss/partials/_core.scss */
 .btnPrev, .btnNext {
   text-decoration: none;
   font-size: 2.8em;
