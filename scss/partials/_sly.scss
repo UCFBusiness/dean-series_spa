@@ -1,17 +1,12 @@
-
 /* Example wrapper */
 .wrap {
 	position: relative;
 	margin: 0;
 }
 
+
 /* Frame */
 .frame {
-    
-	/*height: 250px;
-	line-height: 250px;
-	overflow: hidden;*/
-    
     height: 100%;
 	overflow: hidden;
 }
@@ -27,48 +22,20 @@
 	height: 100%;
 }
 .frame > ul li {
-	/*float: left;
-	width: 227px;
-	height: 100%;
-	margin: 0 1px 0 0;
-	padding: 0;
-	background: #333;
-	color: #ddd;
-	text-align: center;
-	cursor: pointer;*/
-    
     //border: 1px dashed blue;
     
     float: left;
-	/*width: 700px;*/
+	width: 700px;
 	height: 100%;
 	margin: 0 1px 0 0;
 	padding: 0;
 	cursor: pointer;
 }
-@media (max-width: 999px) {
-    .frame > ul li {
-        width: 750px;
-    }
-}
-
-@media (max-width: 767px) {
-    .frame > ul li {
-        width: 320px;
-    }
-}
-
-@media (min-width: 1000px) {
-    .frame > ul li {
-        width: 800px;
-    }
-}
-
-
 .frame > ul li.active {
-	/*color: #fff;
-	background: #a03232;*/
+	/*color: red;
+	background-color: #a03232;*/
 }
+
 
 /* Scrollbar */
 .scrollbar {
@@ -90,6 +57,7 @@
 	width: 100%;
 	height: 20px;
 }
+
 
 /* Pages */
 .pages {
@@ -117,18 +85,16 @@
 	background: #666;
 }
 
+
 /* Controls */
 .controls { margin: 25px 0; text-align: center; }
 
-/* One Item Per Frame example*/
-/*.oneperframe { height: 300px; line-height: 300px; }
-.oneperframe ul li { width: 1140px; }
-.oneperframe ul li.active { background: #333; }*/
 
 /* Crazy example */
 .crazy ul li:nth-child(2n) { width: 100px; margin: 0 4px 0 20px; }
 .crazy ul li:nth-child(3n) { width: 300px; margin: 0 10px 0 5px; }
 .crazy ul li:nth-child(4n) { width: 400px; margin: 0 30px 0 2px; }
+
 
 /* Effects */
 .effects {
@@ -170,28 +136,41 @@
 
 
 /* Custom */
-
 #oneframe > ul li {
     background-color: #fff;
     background-color: rgba(255,255,255,0.6);
-    margin: 0 30px 0 0;
+    margin: 0 50px 0 0;
     min-height: 400px;
+    border-radius: 8px;
+    
+    opacity:0.35;
+    filter:alpha(opacity=35);
+}
+
+#oneframe > ul li.active {
+	background-color: #a03232;
+    border: 1px solid #660000;
+    border-radius: 8px;
+    
+    opacity:1;
+    filter:alpha(opacity=100);
+    
+    color: #eee;
+    box-shadow: 2px 5px 10px #bbb;
+}
+#oneframe .prevS {
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+#oneframe .nextS {
+    position: absolute;
+    top: 50%;
+    right: 0;
 }
 
 #basic > ul li {
     border: 1px solid #eee;
     background-color: #fff;
     background-color: rgba(255,255,255,0.9);
-}
-
-#basic .prevPage {
-    position: absolute;
-    top: 33px;
-    left: 0;
-}
-
-#basic .nextPage {
-    position: absolute;
-    top: 33px;
-    right: 0;
 }
