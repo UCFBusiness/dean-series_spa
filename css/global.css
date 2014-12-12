@@ -43,8 +43,8 @@ h1, h2, h3, h4, h5 {
 
 /* line 44, ../scss/partials/_core.scss */
 .navbar {
-  background-color: #ffcc00;
-  border-bottom: 1px solid #cc9900;
+  background-color: #cc9;
+  border-bottom: 1px solid #444;
   border-radius: 0;
 }
 
